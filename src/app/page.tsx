@@ -148,7 +148,7 @@ const SectionHowToPlay: React.FC = () => {
           </ul>
         </section>
       </div>
-      <motion.div once="true">
+      <motion.div>
         <Image
           src="/telegram.png"
           height={300}
