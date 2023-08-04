@@ -15,6 +15,8 @@ import SectionTaxBreakdown from "@/app/Components/Sections/SectionTaxBreakdown";
 import SectionHowToConnect from "@/app/Components/Sections/SectionHowToConnect";
 import SectionHowToPlay from "@/app/Components/Sections/SectionHowToPlay";
 import ScrollButton from "@/app/Components/ScrollButton";
+import SectionFeatures from "./Components/Sections/SectionFeatures";
+import SectionLinks from "./Components/Sections/SectionLinks";
 
 export default function Home() {
   const data = {
@@ -218,6 +220,23 @@ export default function Home() {
       }
 
       <SectionHowToPlay />
+
+      {
+        // ================================================================================================
+        // FEATURE SECTION
+        // ================================================================================================
+      }
+
+      <SectionFeatures />
+
+      {
+        // ================================================================================================
+        // LINKS SECTION
+        // ================================================================================================
+      }
+
+      <SectionLinks />
+
       <Footer />
     </main>
   );

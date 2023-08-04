@@ -3,8 +3,8 @@ import Image from "next/image";
 
 const SectionBullet: React.FC = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10 p-10 md:p-24 bg-[#100d0a] text-slate-200">
-      <div>
+    <div className="flex flex-col md:flex-row items-center mx-auto gap-10 p-10 md:p-24 bg-[#100d0a] text-slate-200">
+      <div className="w-[300px] md:w-[600px]">
         <h1 className="text-5xl font-bold mb-8">$BULLET</h1>
         <p>
           $BULLET is a deflationary ERC20 token required to required to place
@@ -17,11 +17,12 @@ const SectionBullet: React.FC = () => {
           calling connectAndApprove as part of connecting).
         </p>
       </div>
-      <div className="flex justify-center">
+      <div className="flex justify-center w-[320px] md:w-[500px]">
         <Image
-          src="/path-to-your-image.png" // Replace with your image path
+          src="/bulletbuy.png" // Replace with your image path
           height={300}
           width={300}
+          layout="responsive"
           alt="$BULLET"
           className="rounded-lg"
         />

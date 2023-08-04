@@ -7,7 +7,7 @@ const SectionHowToConnect: React.FC<Props> = () => {
     <section className="flex flex-col md:flex-row p-8 min-h-screen">
       <div className="w-full md:w-1/2 flex justify-center items-center">
         <div className="video-container">
-          <div className="video-wrapper w-full rounded-[30px] overflow-hidden">
+          <div className="video-wrapper w-full rounded-[30pxgit add] overflow-hidden">
             <video controls className="video-player max-h-[75vh]">
               <source src={"/connectvideo.mp4"} type="video/mp4" />
               Your browser does not support the video tag.
@@ -17,10 +17,7 @@ const SectionHowToConnect: React.FC<Props> = () => {
       </div>
       <div className="w-full md:w-1/2 mt-6 md:mt-0 flex flex-col justify-center p-4 md:p-8">
         <h3 className="text-2xl font-semibold mb-4">How To Connect</h3>
-        <p>
-          Note: we intend to make the Connecting process a lot more
-          user-friendly
-        </p>
+
         <ol className="list-decimal list-inside mt-4">
           <li>
             {`Message @bullet_game_bot on Telegram with the message "/connect" -
