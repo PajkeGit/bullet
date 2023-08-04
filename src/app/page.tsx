@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import Header from "@/Components/Header";
 import Image from "next/image";
@@ -56,8 +54,40 @@ export default function Home() {
       </div>
 
       <div className="h-[100vh/2]"></div>
-      <SectionRussianRoulette />
-      <SectionTelegramTwist />
+      <div
+        id="russian-roulette"
+        className="flex flex-col w-screen justify-center md:flex-row mx-auto items-center p-10 md:p-24 bg-[#100d0a] text-slate-200"
+      >
+        <div className="flex justify-center mr-20">
+          <Image
+            src="/telegram.png" // Placeholder image
+            height={300}
+            width={300}
+            alt=""
+            className="rounded-lg"
+          />
+        </div>
+        <div className="ml-10">
+          <h1 className="text-5xl font-bold mb-4">Russian Roulette</h1>
+          <h2 className="text-3xl font-semibold mb-4">But on Telegram</h2>
+          <ul className="list-inside list-decimal">
+            <li>
+              There is a revolver containing a single bullet in one of the
+              chambers.
+            </li>
+            <li>Each player places a bet prior to the game starting.</li>
+            <li>
+              If a player pulls the trigger while the chamber is loaded with the
+              bullet, the player dies and the game ends.
+            </li>
+            <li>The stake of the dying player is paid out to survivors.</li>
+          </ul>
+          <button className="text-xl bg-red-800 hover:bg-red-700 rounded-lg px-5 py-2 mt-5">
+            Next Section
+          </button>
+        </div>
+      </div>
+      {/* <SectionTelegramTwist /> */}
       <SectionBullet />
       <div className="w-full flex flex-col items-center">
         <div>Only CA: 0x8ef32a03784c8fd63bbf027251b9620865bd54b6</div>
