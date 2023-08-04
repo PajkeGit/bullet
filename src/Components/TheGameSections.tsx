@@ -23,7 +23,7 @@ const SectionRussianRoulette: React.FC = () => {
           className="rounded-lg"
         />
       </motion.div>
-      <div className="md:ml-10">
+      <div className="sm:ml-10">
         <h1 className="text-5xl font-bold mb-4">Russian Roulette</h1>
         <h2 className="text-3xl font-semibold mb-4">But on Telegram</h2>
         <ul className="list-inside list-decimal">
@@ -58,11 +58,11 @@ const SectionTelegramTwist: React.FC = () => {
 
   return (
     <div
-      id="telegram-twist"
-      className="w-screen justify-center flex flex-col md:flex-row mx-auto items-center gap-gi10 p-10 md:p-24 bg-[#100d0a] text-slate-200"
+      id="russian-roulette"
+      className="flex flex-col w-screen justify-center md:flex-row mx-auto items-center p-10 md:p-24 bg-[#100d0a] text-slate-200"
     >
-      <div>
-        <h1 className="text-5xl font-bold mb-8">The Telegram Twist</h1>
+      <div className="sm:mr-10">
+        <h1 className="text-5xl font-bold mb-4">The Telegram Twist</h1>
         <ul className="list-inside list-decimal">
           <li>
             The Bullet Game Bot is a Telegram bot that organizes Russian
