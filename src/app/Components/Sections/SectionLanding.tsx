@@ -25,7 +25,7 @@ const SectionLanding = (props: Props) => {
           <ChatArea />
         </div>
         <div className="my-0 flex items-center flex-col">
-          <div className="z-50 text-slate-300">
+          <div className="z-50 text-slate-300 text-sm">
             0x8ef32a03784c8fd63bbf027251b9620865bd54b6
           </div>
         </div>

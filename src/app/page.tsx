@@ -31,7 +31,7 @@ export default function Home() {
   };
 
   return (
-    <main className="flex flex-col bg-[#100d0a] text-slate-200">
+    <main className="flex flex-col w-screen bg-[#100d0a] text-slate-200">
       <Header />
 
       <SectionLanding />

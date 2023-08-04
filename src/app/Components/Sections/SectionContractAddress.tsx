@@ -6,8 +6,10 @@ type Props = {};
 
 const SectionContractAddress = (props: Props) => {
   return (
-    <div className="w-full flex flex-col items-center">
-      <div>Only CA: 0x8ef32a03784c8fd63bbf027251b9620865bd54b6</div>
+    <div className="w-full flex flex-col items-center text-sm">
+      <div className="w-full text-center">
+        Only CA: 0x8ef32a03784c8fd63bbf027251b9620865bd54b6
+      </div>
       <div className="flex flex-row">
         <div className="flex gap-5">
           <Link

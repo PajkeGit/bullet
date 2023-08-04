@@ -13,7 +13,7 @@ const SectionLinks = (props: Props) => {
     >
       <div className="flex flex-col gap-10 h-[30vh] items-center">
         <div className="text-5xl">Links</div>
-        <div className="flex flex-row lg:flex-col gap-2">
+        <div className="flex flex-col gap-2">
           <a
             href="https://twitter.com"
             target="_blank"
@@ -68,14 +68,84 @@ const SectionLinks = (props: Props) => {
           </a>
         </div>
       </div>
-      <section className="flex flex-col gap-10 h-[30vh]">
-        <h2 className="text-5xl">Contracts</h2>
+      <section className="flex flex-col gap-10 h-[full]">
+        <h2 className="text-5xl mt-20 md:mt-0">Contracts</h2>
         <div className="">
-          <table className="border border-gray-200 text-sm">
+          <div className="flex md:hidden flex-col">
+            <div className="flex flex-col items-center text-sm">
+              <td className="">$BULLET contract</td>
+              <td className="">0x8ef32a03784c8Fd63bBf027251b9620865bD54B6</td>
+              <td className="">
+                <a
+                  target="_blank"
+                  href="https://etherscan.io/address/0x8ef32a03784c8Fd63bBf027251b9620865bD54B6"
+                >
+                  <Image
+                    src="/logos/etherscan.png"
+                    width={24}
+                    height={24}
+                    alt="Etherscan"
+                  />
+                </a>
+              </td>
+            </div>
+            <div className="flex flex-col items-center text-sm">
+              <td className="">Escrow contract contract</td>
+              <td className="">0x4d2E8a0ebC4BB3BE7F3d65426F6a0C5836635DBE</td>
+              <td className="">
+                <a
+                  target="_blank"
+                  href="https://etherscan.io/address/0x4d2E8a0ebC4BB3BE7F3d65426F6a0C5836635DBE"
+                >
+                  <Image
+                    src="/logos/etherscan.png"
+                    width={24}
+                    height={24}
+                    alt="Etherscan"
+                  />
+                </a>
+              </td>
+            </div>
+            <div className="flex flex-col items-center text-sm">
+              <td className="">Bot/Deployer</td>
+              <td className="">0x691309814f4F74942db62E9FD927F543aBd84D16</td>
+              <td className="">
+                <a
+                  target="_blank"
+                  href="https://etherscan.io/address/0x691309814f4F74942db62E9FD927F543aBd84D16"
+                >
+                  <Image
+                    src="/logos/etherscan.png"
+                    width={24}
+                    height={24}
+                    alt="Etherscan"
+                  />
+                </a>
+              </td>
+            </div>
+            <div className="flex flex-col items-center text-sm">
+              <td className="">Revenue Share Wallet</td>
+              <td className="">0x171d311eAcd2206d21Cb462d661C33F0eddadC03</td>
+              <td className="">
+                <a
+                  target="_blank"
+                  href="https://etherscan.io/address/0x171d311eAcd2206d21Cb462d661C33F0eddadC03"
+                >
+                  <Image
+                    src="/logos/etherscan.png"
+                    width={24}
+                    height={24}
+                    alt="Etherscan"
+                  />
+                </a>
+              </td>
+            </div>
+          </div>
+          <table className="hidden md:flex border border-gray-200 text-sm">
             <thead>
               <tr className="bg-gray-800 text-white">
                 <th className="py-2 px-4 text-left">Contract</th>
-                <th className="py-2 px-4 text-left">Address</th>
+                <th className="hidden md:flex py-2 px-4 text-left">Address</th>
                 <th className="py-2 px-4 text-left">Etherscan</th>
               </tr>
             </thead>
