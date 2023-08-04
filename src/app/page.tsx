@@ -1,22 +1,33 @@
 import React from "react";
-import Header from "@/Components/Header";
+import Header from "@/app/Components/Header";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import ChatArea from "@/Components/ChatArea";
+import ChatArea from "@/app/Components/ChatArea";
 import Link from "next/link";
-import Footer from "@/Components/Footer";
+import Footer from "@/app/Components/Footer";
 import {
   SectionRussianRoulette,
   SectionTelegramTwist,
-} from "@/Components/Sections/TheGameSections";
-import SectionBullet from "@/Components/Sections/SectionBullet";
-import SectionTokenomics from "@/Components/Sections/SectionTokenomics";
-import SectionTaxBreakdown from "@/Components/Sections/SectionTaxBreakdown";
-import SectionHowToConnect from "@/Components/Sections/SectionHowToConnect";
-import SectionHowToPlay from "@/Components/Sections/SectionHowToPlay";
-import ScrollButton from "@/Components/ScrollButton";
+} from "@/app/Components/Sections/TheGameSections";
+import SectionBullet from "@/app/Components/Sections/SectionBullet";
+import SectionTokenomics from "@/app/Components/Sections/SectionTokenomics";
+import SectionTaxBreakdown from "@/app/Components/Sections/SectionTaxBreakdown";
+import SectionHowToConnect from "@/app/Components/Sections/SectionHowToConnect";
+import SectionHowToPlay from "@/app/Components/Sections/SectionHowToPlay";
+import ScrollButton from "@/app/Components/ScrollButton";
 
 export default function Home() {
+  const data = {
+    labels: ["Initial Liquidity Pool", "Marketing Wallet"],
+    datasets: [
+      {
+        data: [90, 10],
+        backgroundColor: ["#FFCE56", "#36A2EB"],
+        hoverBackgroundColor: ["#FFCE56", "#36A2EB"],
+      },
+    ],
+  };
+
   return (
     <main className="flex flex-col bg-[#100d0a] text-slate-200">
       <div className="">
@@ -183,6 +194,13 @@ export default function Home() {
       }
 
       <SectionTokenomics />
+
+      {
+        // ================================================================================================
+        // TAX SECTION
+        // ================================================================================================
+      }
+
       <SectionTaxBreakdown />
 
       {
