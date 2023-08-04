@@ -10,12 +10,12 @@ import Footer from "@/Components/Footer";
 import {
   SectionRussianRoulette,
   SectionTelegramTwist,
-} from "@/Components/TheGameSections";
-import SectionBullet from "@/Components/SectionBullet";
-import SectionTokenomics from "@/Components/SectionTokenomics";
-import SectionTaxBreakdown from "@/Components/SectionTaxBreakdown";
-import SectionHowToConnect from "@/Components/SectionHowToConnect";
-import SectionHowToPlay from "@/Components/SectionHowToPlay";
+} from "@/Components/Sections/TheGameSections";
+import SectionBullet from "@/Components/Sections/SectionBullet";
+import SectionTokenomics from "@/Components/Sections/SectionTokenomics";
+import SectionTaxBreakdown from "@/Components/Sections/SectionTaxBreakdown";
+import SectionHowToConnect from "@/Components/Sections/SectionHowToConnect";
+import SectionHowToPlay from "@/Components/Sections/SectionHowToPlay";
 
 export default function Home() {
   const handleGetStartedClick = () => {

@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image"; // Or the appropriate image component
 import { motion } from "framer-motion"; // Or the appropriate import for motion components
+import "./SomeCss.css";
 
 const SectionRussianRoulette: React.FC = () => {
   const handleNextSectionClick = () => {
@@ -14,7 +15,7 @@ const SectionRussianRoulette: React.FC = () => {
       id="russian-roulette"
       className="flex flex-col w-screen justify-center md:flex-row mx-auto items-center p-10 md:p-24 bg-[#100d0a] text-slate-200"
     >
-      <motion.div className="flex justify-center">
+      <div className="flex justify-center">
         <Image
           src="/telegram.png" // Placeholder image
           height={300}
@@ -22,7 +23,7 @@ const SectionRussianRoulette: React.FC = () => {
           alt=""
           className="rounded-lg"
         />
-      </motion.div>
+      </div>
       <div className="sm:ml-10">
         <h1 className="text-5xl font-bold mb-4">Russian Roulette</h1>
         <h2 className="text-3xl font-semibold mb-4">But on Telegram</h2>
@@ -63,7 +64,7 @@ const SectionTelegramTwist: React.FC = () => {
     >
       <div className="sm:mr-10">
         <h1 className="text-5xl font-bold mb-4">The Telegram Twist</h1>
-        <ul className="list-inside list-decimal">
+        <ul className="list-inside list-decimal max-w-[35vw]">
           <li>
             The Bullet Game Bot is a Telegram bot that organizes Russian
             Roulette games between two or more players.
@@ -87,7 +88,7 @@ const SectionTelegramTwist: React.FC = () => {
           Next Section
         </button>
       </div>
-      <motion.div className="flex justify-center">
+      <div className="flex justify-center">
         <Image
           src="/telegram.png" // Placeholder image
           height={300}
@@ -95,7 +96,7 @@ const SectionTelegramTwist: React.FC = () => {
           alt=""
           className="rounded-lg"
         />
-      </motion.div>
+      </div>
     </div>
   );
 };
