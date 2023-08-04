@@ -1,17 +1,10 @@
-"use client";
-
 import React from "react";
 import Image from "next/image"; // Or the appropriate image component
 import { motion } from "framer-motion"; // Or the appropriate import for motion components
 import "./SomeCss.css";
+import ScrollButton from "../ScrollButton";
 
 const SectionRussianRoulette: React.FC = () => {
-  const handleNextSectionClick = () => {
-    document
-      .getElementById("telegram-twist")
-      ?.scrollIntoView({ behavior: "smooth" });
-  };
-
   return (
     <div
       id="russian-roulette"
@@ -41,24 +34,13 @@ const SectionRussianRoulette: React.FC = () => {
           </li>
           <li>The stake of the dying player is paid out to survivors.</li>
         </ul>
-        <button
-          onClick={handleNextSectionClick}
-          className="text-xl bg-red-800 hover:bg-red-700 rounded-lg px-5 py-2 mt-5"
-        >
-          Next Section
-        </button>
+        <ScrollButton id="" label="Next Section" />
       </div>
     </div>
   );
 };
 
 const SectionTelegramTwist: React.FC = () => {
-  const handleNextSectionClick = () => {
-    document
-      .getElementById("how-to-play")
-      ?.scrollIntoView({ behavior: "smooth" });
-  };
-
   return (
     <div
       id="russian-roulette"
@@ -83,12 +65,7 @@ const SectionTelegramTwist: React.FC = () => {
             where the bot is hosting games.
           </li>
         </ul>
-        <button
-          onClick={handleNextSectionClick}
-          className="text-xl bg-red-800 hover:bg-red-700 rounded-lg px-5 py-2 mt-5"
-        >
-          Next Section
-        </button>
+        <ScrollButton id="" label="Next Section" />
       </div>
       <div className="flex justify-center ml-20">
         <Image
