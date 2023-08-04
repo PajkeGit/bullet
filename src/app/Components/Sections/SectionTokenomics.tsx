@@ -1,5 +1,6 @@
 import React from "react";
 import { PieChart } from "../PieChart";
+import ScrollButton from "../ScrollButton";
 
 const SectionTokenomics: React.FC = () => {
   const data = {
@@ -14,7 +15,10 @@ const SectionTokenomics: React.FC = () => {
   };
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 items-center min-h-screen gap-10 p-10 md:p-24 bg-[#100d0a] text-slate-200 ">
+    <div
+      id="tokenomics"
+      className="grid grid-cols-1 md:grid-cols-2 items-center min-h-screen gap-10 p-10 md:p-24 bg-[#100d0a] text-slate-200 "
+    >
       <div className="flex justify-center">
         <PieChart />
       </div>
@@ -23,6 +27,7 @@ const SectionTokenomics: React.FC = () => {
         <div>Stealth Launch</div>
         <p>90% - Initial Liquidity Pool</p>
         <p>10% - Marketing Wallet</p>
+        <ScrollButton id="tax-breakdown" label="Continue" />
       </div>
     </div>
   );

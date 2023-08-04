@@ -1,9 +1,13 @@
 import React from "react";
 import Image from "next/image";
+import ScrollButton from "../ScrollButton";
 
 const SectionBullet: React.FC = () => {
   return (
-    <div className="flex flex-col md:flex-row items-center mx-auto gap-10 p-10 md:p-24 bg-[#100d0a] text-slate-200">
+    <div
+      id="bullet"
+      className="flex flex-col md:flex-row items-center mx-auto gap-10 p-10 md:p-24 bg-[#100d0a] text-slate-200"
+    >
       <div className="w-[300px] md:w-[600px]">
         <h1 className="text-5xl font-bold mb-8">$BULLET</h1>
         <p>
@@ -16,6 +20,7 @@ const SectionBullet: React.FC = () => {
           by the bot into the escrow contract (this is done automatically when
           calling connectAndApprove as part of connecting).
         </p>
+        <ScrollButton id="tokenomics" label="Tokenomics" />
       </div>
       <div className="flex justify-center w-[320px] md:w-[500px]">
         <Image

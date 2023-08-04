@@ -5,8 +5,8 @@ type Props = {};
 
 const SectionHowToPlay: React.FC<Props> = () => {
   return (
-    <section className="flex flex-col p-24 md:px-[200px]">
-      <h2 className="text-2xl font-semibold mb-4">How to Play</h2>
+    <section id="how-to-play" className="flex flex-col p-24 md:px-[200px]">
+      <h2 className="text-5xl font-semibold mb-4">How to Play</h2>
       <div className="overflow-x-auto">
         <table className="min-w-full border border-gray-200 text-sm leading-snug">
           <thead>
@@ -46,7 +46,7 @@ const SectionHowToPlay: React.FC<Props> = () => {
           </tbody>
         </table>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-20 mt-5 px-20 md:px-[100px]">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 mt-5 md:px-[10px]">
         <div>
           <Image
             src="/howtoplay1.jpg"

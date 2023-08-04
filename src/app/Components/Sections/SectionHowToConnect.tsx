@@ -1,10 +1,14 @@
 import React from "react";
+import ScrollButton from "../ScrollButton";
 
 type Props = {};
 
 const SectionHowToConnect: React.FC<Props> = () => {
   return (
-    <section className="flex flex-col md:flex-row p-8 min-h-screen">
+    <section
+      id="how-to-connect"
+      className="flex flex-col md:flex-row p-8 min-h-screen"
+    >
       <div className="w-full md:w-1/2 flex justify-center items-center">
         <div className="video-container">
           <div className="video-wrapper w-full rounded-[30pxgit add] overflow-hidden">
@@ -16,7 +20,7 @@ const SectionHowToConnect: React.FC<Props> = () => {
         </div>
       </div>
       <div className="w-full md:w-1/2 mt-6 md:mt-0 flex flex-col justify-center p-4 md:p-8">
-        <h3 className="text-2xl font-semibold mb-4">How To Connect</h3>
+        <h3 className="text-5xl font-semibold mb-4">How To Connect</h3>
 
         <ol className="list-decimal list-inside mt-4">
           <li>
@@ -35,6 +39,7 @@ const SectionHowToConnect: React.FC<Props> = () => {
           </li>
           <li>You are now connected and can use your $BULLET to bet!</li>
         </ol>
+        <ScrollButton id="how-to-play" label="How to play" />
       </div>
     </section>
   );

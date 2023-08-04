@@ -22,10 +22,10 @@ const SectionFeatures = (props: Props) => {
             the links below to be sent to our GitBook where all the technical
             stuff is broken down for you :)`}
           </div>
-          <div className="flex flex-row w-full justify-between items-center mt-20">
+          <div className="flex flex-row w-full justify-between items-center mt-20 gap-20">
             <div className="flex flex-col gap-4">
               <div className="text-3xl">Escrow Contract</div>
-              <FaHandshake className="w-[300px] h-[300px]" />
+              <FaHandshake className="w-[200px] h-[200px]" />
               <Link
                 className="pink-700 rounded-md bg-slate-700 hover:bg-slate-600 px-3 py-1 mt-2 flex flex-row gap-1 items-center justify-center font-bold text-sm"
                 href="https://bullet-game.gitbook.io/bullet-game/architecture/escrow"
@@ -43,7 +43,7 @@ const SectionFeatures = (props: Props) => {
             </div>
             <div className="flex flex-col gap-4">
               <div className="text-3xl">Provably Fair</div>
-              <BiMath className="w-[300px] h-[300px]" />
+              <BiMath className="w-[200px] h-[200px]" />
               <Link
                 className="pink-700 rounded-md bg-slate-700 hover:bg-slate-600 px-3 py-1 mt-2 flex flex-row gap-1 items-center justify-center font-bold text-sm"
                 href="https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0x8ef32a03784c8fd63bbf027251b9620865bd54b6"

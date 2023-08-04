@@ -8,34 +8,70 @@ type Props = {};
 const SectionLinks = (props: Props) => {
   return (
     <div
-      id="features"
-      className="grid grid-cols-1 md:grid-cols-2 w-screen justify-center md:flex-col mx-auto items-center gap-20 text-center p-10 md:p-24 bg-[#100d0a] text-slate-200"
+      id="links"
+      className="flex flex-col lg:flex-row w-screen justify-center mx-auto items-center gap-20 text-center p-10 md:p-24 bg-[#100d0a] text-slate-200"
     >
       <div className="flex flex-col gap-10 h-[30vh] items-center">
         <div className="text-5xl">Links</div>
-        <div className="flex flex-col">
-          <div className="flex flex-row gap-2 items-center">
+        <div className="flex flex-row lg:flex-col gap-2">
+          <a
+            href="https://twitter.com"
+            target="_blank"
+            className="pink-700 rounded-md bg-[#00acee] hover:brightness-110 px-3 py-2 flex flex-row gap-1 items-center justify-center font-bold"
+          >
             <FaTwitter />
-            Twitter
-          </div>
-          <div className="flex flex-row gap-2 items-center">
+            <div>Twitter</div>
+          </a>
+          <a
+            href="https://telegram.org"
+            target="_blank"
+            className="pink-700 rounded-md bg-[#0088cc] hover:brightness-110 px-3 py-2 flex flex-row gap-1 items-center justify-center font-bold"
+          >
             <FaTelegram />
-            Telegram
-          </div>
-          <div className="flex flex-row gap-2 items-center">
+            <div>Telegram</div>
+          </a>
+          <a
+            href="https://your-telegram-bot-url.com"
+            target="_blank"
+            className="pink-700 rounded-md bg-[#0088cc] hover:brightness-110 px-3 py-2 flex flex-row gap-1 items-center justify-center font-bold"
+          >
             <FaRobot />
-            Telegram bot
-          </div>
-          <div className="flex flex-row gap-2 items-center">
-            <FaChartLine />
-            Dextools
-          </div>
+            <div>Telegram bot</div>
+          </a>
+          <a
+            className="pink-700 rounded-md bg-blue-700 hover:bg-blue-600 px-3 py-2 flex flex-row gap-1 items-center justify-center font-bold"
+            href="https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0x8ef32a03784c8fd63bbf027251b9620865bd54b6"
+            target="_blank"
+          >
+            <Image
+              src="/logos/dextools.png"
+              height={25}
+              width={25}
+              alt=""
+              className="-translate-y-0"
+            />
+            <div>Dextools</div>
+          </a>
+          <a
+            className="pink-700 rounded-md bg-pink-700 hover:bg-pink-500 px-3 py-2 flex flex-row gap-1 items-center justify-center font-bold"
+            href="https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0x8ef32a03784c8fd63bbf027251b9620865bd54b6"
+            target="_blank"
+          >
+            <Image
+              src="/logos/uniswapw.png"
+              height={25}
+              width={25}
+              alt=""
+              className="-translate-y-1"
+            />
+            <div>Uniswap</div>
+          </a>
         </div>
       </div>
       <section className="flex flex-col gap-10 h-[30vh]">
         <h2 className="text-5xl">Contracts</h2>
         <div className="">
-          <table className="border border-gray-200 text-sm leading-snug">
+          <table className="border border-gray-200 text-sm">
             <thead>
               <tr className="bg-gray-800 text-white">
                 <th className="py-2 px-4 text-left">Contract</th>
