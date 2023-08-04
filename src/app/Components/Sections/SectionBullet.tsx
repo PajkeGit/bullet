@@ -11,8 +11,8 @@ const SectionBullet: React.FC = () => {
       <div className="w-[300px] md:w-[600px]">
         <h1 className="text-5xl font-bold mb-8">$BULLET</h1>
         <p>
-          $BULLET is a deflationary ERC20 token required to required to place
-          bets within the Telegram bot.
+          $BULLET is a deflationary ERC20 token required to place bets within
+          the Telegram bot.
         </p>
         <p>All players must hold some amount of $BULLET in order to play.</p>
         <p>
