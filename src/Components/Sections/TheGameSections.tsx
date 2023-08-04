@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Image from "next/image"; // Or the appropriate image component
 import { motion } from "framer-motion"; // Or the appropriate import for motion components
