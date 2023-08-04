@@ -141,14 +141,14 @@ const SectionLinks = (props: Props) => {
               </td>
             </div>
           </div>
-          <table className="hidden md:flex border border-gray-200 text-sm">
-            <thead>
-              <tr className="bg-gray-800 text-white">
+          <table className="hidden md:flex flex-col border border-gray-200 text-sm ">
+            <div>
+              <tr className="bg-gray-800 text-white flex justify-between">
                 <th className="py-2 px-4 text-left">Contract</th>
                 <th className="hidden md:flex py-2 px-4 text-left">Address</th>
                 <th className="py-2 px-4 text-left">Etherscan</th>
               </tr>
-            </thead>
+            </div>
             <tbody>
               <tr className="border-b border-gray-200">
                 <td className="py-2 px-4 text-left">$BULLET contract</td>
