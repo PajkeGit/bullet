@@ -60,7 +60,7 @@ const SectionTelegramTwist: React.FC = () => {
   return (
     <div
       id="russian-roulette"
-      className="flex flex-col w-screen justify-center md:flex-row mx-auto items-center p-10 md:p-24 bg-[#100d0a] text-slate-200"
+      className="flex flex-col min-w-screen justify-center md:flex-row mx-auto items-center gap-10 p-10 md:p-24 bg-[#100d0a] text-slate-200"
     >
       <div className="mr-[2.5rem]">
         <h1 className="text-5xl font-bold mb-4">The Telegram Twist</h1>
