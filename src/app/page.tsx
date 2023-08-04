@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import Header from "@/Components/Header";
 import Image from "next/image";
@@ -16,14 +14,9 @@ import SectionTokenomics from "@/Components/Sections/SectionTokenomics";
 import SectionTaxBreakdown from "@/Components/Sections/SectionTaxBreakdown";
 import SectionHowToConnect from "@/Components/Sections/SectionHowToConnect";
 import SectionHowToPlay from "@/Components/Sections/SectionHowToPlay";
+import ScrollButton from "@/Components/ScrollButton";
 
 export default function Home() {
-  const handleGetStartedClick = () => {
-    document
-      .getElementById("russian-roulette")
-      ?.scrollIntoView({ behavior: "smooth" });
-  };
-
   return (
     <main className="flex flex-col bg-[#100d0a] text-slate-200">
       <div className="">
@@ -38,14 +31,7 @@ export default function Home() {
               <div className="">FACE THE</div>
               <div className="text-red-500 -translate-x-[5px]">ODDS</div>
 
-              <div className="flex gap-5">
-                <button
-                  onClick={handleGetStartedClick}
-                  className="text-xl bg-red-800 hover:bg-red-700 rounded-lg px-5 py-2 mt-5 z-50"
-                >
-                  Get Started
-                </button>
-              </div>
+              <ScrollButton id="" label="Get Started" />
             </div>
             <ChatArea />
           </div>
@@ -101,7 +87,7 @@ export default function Home() {
           </button>
         </div>
       </div>
-      <SectionTelegramTwist />
+      {/* <SectionTelegramTwist /> */}
       <SectionBullet />
       <div className="w-full flex flex-col items-center">
         <div>Only CA: 0x8ef32a03784c8fd63bbf027251b9620865bd54b6</div>
