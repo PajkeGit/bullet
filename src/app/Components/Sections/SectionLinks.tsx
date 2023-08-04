@@ -1,7 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { FaChartLine, FaRobot, FaTelegram, FaTwitter } from "react-icons/fa";
+import {
+  FaBook,
+  FaChartLine,
+  FaRobot,
+  FaTelegram,
+  FaTwitter,
+} from "react-icons/fa";
+import { SiGitbook } from "react-icons/si";
 
 type Props = {};
 
@@ -11,7 +18,7 @@ const SectionLinks = (props: Props) => {
       id="links"
       className="flex flex-col lg:flex-row w-screen justify-center mx-auto items-center gap-20 text-center p-10 md:p-24 bg-[#100d0a] text-slate-200"
     >
-      <div className="flex flex-col gap-10 h-[30vh] items-center">
+      <div className="flex flex-col gap-10 items-center">
         <div className="text-5xl">Links</div>
         <div className="flex flex-col gap-2">
           <a
@@ -50,7 +57,7 @@ const SectionLinks = (props: Props) => {
               alt=""
               className="-translate-y-0"
             />
-            <div>Dextools</div>
+            <div>DexTools</div>
           </a>
           <a
             className="pink-700 rounded-md bg-pink-700 hover:bg-pink-500 px-3 py-2 flex flex-row gap-1 items-center justify-center font-bold"
@@ -65,6 +72,14 @@ const SectionLinks = (props: Props) => {
               className="-translate-y-1"
             />
             <div>Uniswap</div>
+          </a>
+          <a
+            href="https://bullet-game.gitbook.io/bullet-game"
+            target="_blank"
+            className="pink-700 rounded-md bg-slate-700 hover:bg-slate-600 px-3 py-2 flex flex-row gap-1 items-center justify-center font-bold"
+          >
+            <SiGitbook />
+            <div>GitBook</div>
           </a>
         </div>
       </div>

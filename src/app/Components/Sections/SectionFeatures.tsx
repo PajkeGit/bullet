@@ -3,6 +3,7 @@ import React from "react";
 import Link from "next/link";
 import { FaHandshake } from "react-icons/fa";
 import { BiMath } from "react-icons/bi";
+import { SiGitbook } from "react-icons/si";
 
 type Props = {};
 
@@ -23,7 +24,7 @@ const SectionFeatures = (props: Props) => {
             stuff is broken down for you :)`}
           </div>
           <div className="flex flex-col md:flex-row w-full justify-between items-center mt-20 gap-20">
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-4 items-center">
               <div className="text-3xl">Escrow Contract</div>
               <FaHandshake className="w-[200px] h-[200px]" />
               <Link
@@ -31,32 +32,20 @@ const SectionFeatures = (props: Props) => {
                 href="https://bullet-game.gitbook.io/bullet-game/architecture/escrow"
                 target="_blank"
               >
-                <Image
-                  src="/logos/gitbook.svg"
-                  height={25}
-                  width={25}
-                  alt=""
-                  className="-translate-y-0"
-                />
-                <div>Gitbook</div>
+                <SiGitbook />
+                <div>GitBook</div>
               </Link>
             </div>
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-4 items-center">
               <div className="text-3xl">Provably Fair</div>
               <BiMath className="w-[200px] h-[200px]" />
               <Link
                 className="pink-700 rounded-md bg-slate-700 hover:bg-slate-600 px-3 py-1 mt-2 flex flex-row gap-1 items-center justify-center font-bold text-sm"
-                href="https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0x8ef32a03784c8fd63bbf027251b9620865bd54b6"
+                href="https://bullet-game.gitbook.io/bullet-game/architecture/provably-fair"
                 target="_blank"
               >
-                <Image
-                  src="/logos/gitbook.svg"
-                  height={25}
-                  width={25}
-                  alt=""
-                  className="-translate-y-0"
-                />
-                <div>Gitbook</div>
+                <SiGitbook />
+                <div>GitBook</div>
               </Link>
             </div>
           </div>

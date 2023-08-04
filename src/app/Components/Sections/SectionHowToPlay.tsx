@@ -9,9 +9,9 @@ const SectionHowToPlay: React.FC<Props> = () => {
       id="how-to-play"
       className="flex flex-col p-5 md:p-24 md:px-[200px]"
     >
-      <h2 className="text-5xl font-semibold mb-4">How to Play</h2>
+      <h2 className="text-5xl font-semibold mb-8">How to Play</h2>
       <div className="overflow-x-auto">
-        <table className="min-w-full border border-gray-200 text-sm leading-snug">
+        <table className="min-w-full border border-gray-200 text-sm leading-snug mb-4">
           <thead>
             <tr className="bg-gray-800 text-white">
               <th className="py-2 px-4 text-left">Command</th>

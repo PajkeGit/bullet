@@ -11,7 +11,7 @@ const SectionHowToConnect: React.FC<Props> = () => {
     >
       <div className="w-full md:w-1/2 flex justify-center items-center">
         <div className="video-container">
-          <div className="video-wrapper w-full rounded-[30pxgit add] overflow-hidden">
+          <div className="video-wrapper w-full rounded-[30px] overflow-hidden">
             <video controls className="video-player max-h-[75vh]">
               <source src={"/connectvideo.mp4"} type="video/mp4" />
               Your browser does not support the video tag.

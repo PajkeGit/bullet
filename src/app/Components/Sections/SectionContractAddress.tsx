@@ -38,7 +38,7 @@ const SectionContractAddress = (props: Props) => {
               alt=""
               className="-translate-y-0"
             />
-            <div>Dextools</div>
+            <div>DexTools</div>
           </Link>
         </div>
       </div>
