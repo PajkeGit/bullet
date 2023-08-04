@@ -13,7 +13,7 @@ const Header = (props: Props) => {
     <div className="fixed w-full px-5 bg-[#100d0a] p-2 z-[500] font-bold flex justify-between items-center">
       <div className="flex flex-row gap-2 font-normal h-[100%] items-center">
         <div className="font-bold text-2xl">BULLET GAME</div>
-        <div className="flex flex-row h-[100%] items-center text-base justify-center gap-3 ml-10">
+        <div className=" flex-row h-[100%] items-center text-base justify-center gap-3 ml-10 hidden md:flex">
           <button
             className="hover:opacity-75"
             onClick={() => {
