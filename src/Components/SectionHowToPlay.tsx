@@ -45,7 +45,7 @@ const SectionHowToPlay: React.FC<Props> = () => {
           </tbody>
         </table>
       </div>
-      <div></div>
+      <div>ç</div>
     </section>
   );
 };
