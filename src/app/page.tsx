@@ -14,6 +14,8 @@ import {
 import SectionBullet from "@/Components/SectionBullet";
 import SectionTokenomics from "@/Components/SectionTokenomics";
 import SectionTaxBreakdown from "@/Components/SectionTaxBreakdown";
+import SectionHowToConnect from "@/Components/SectionHowToConnect";
+import SectionHowToPlay from "@/Components/SectionHowToPlay";
 
 export default function Home() {
   const handleGetStartedClick = () => {
@@ -106,6 +108,7 @@ export default function Home() {
       </div>
       <SectionTokenomics />
       <SectionTaxBreakdown />
+      <SectionHowToConnect />
       <SectionHowToPlay />
       <Footer />
     </main>
@@ -118,96 +121,96 @@ const GradientDiv: React.FC = () => {
   );
 };
 
-const SectionHowToPlay: React.FC = () => {
-  return (
-    <div
-      id="how-to-play"
-      className="flex flex-col md:flex-row justify-between h-full p-10 md:p-24 bg-[#100d0a] text-slate-200"
-    >
-      <div className="">
-        <h1 className="text-5xl font-bold mb-8">Bullet Game</h1>
-        <p>Spectate games from the main channel</p>
+// const SectionHowToPlay: React.FC = () => {
+//   return (
+//     <div
+//       id="how-to-play"
+//       className="flex flex-col md:flex-row justify-between h-full p-10 md:p-24 bg-[#100d0a] text-slate-200"
+//     >
+//       <div className="">
+//         <h1 className="text-5xl font-bold mb-8">Bullet Game</h1>
+//         <p>Spectate games from the main channel</p>
 
-        <section className="mb-12 flex flex-col gap">
-          <h2 className="text-3xl font-semibold mt-5">Buying BULLET</h2>
-          <p>
-            Welcome! Bullet game is a telegram bot that lets you play russian
-            roulette with your friends on Telegram.
-          </p>
-          <p>BULLET is required to play.</p>{" "}
-          <div className="flex">
-            <Link
-              className="pink-700 rounded-md bg-pink-700 hover:bg-pink-500 px-3 py-2 mt-2 flex flex-row gap-1 items-center justify-center font-bold"
-              href="https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0x8ef32a03784c8fd63bbf027251b9620865bd54b6"
-              target="_blank"
-            >
-              <Image
-                src="/logos/telegramwhite.png"
-                height={25}
-                width={25}
-                alt=""
-                className="-translate-y-1"
-              />
-              <div>Uniswap</div>
-            </Link>
-          </div>
-        </section>
+//         <section className="mb-12 flex flex-col gap">
+//           <h2 className="text-3xl font-semibold mt-5">Buying BULLET</h2>
+//           <p>
+//             Welcome! Bullet game is a telegram bot that lets you play russian
+//             roulette with your friends on Telegram.
+//           </p>
+//           <p>BULLET is required to play.</p>{" "}
+//           <div className="flex">
+//             <Link
+//               className="pink-700 rounded-md bg-pink-700 hover:bg-pink-500 px-3 py-2 mt-2 flex flex-row gap-1 items-center justify-center font-bold"
+//               href="https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0x8ef32a03784c8fd63bbf027251b9620865bd54b6"
+//               target="_blank"
+//             >
+//               <Image
+//                 src="/logos/telegramwhite.png"
+//                 height={25}
+//                 width={25}
+//                 alt=""
+//                 className="-translate-y-1"
+//               />
+//               <div>Uniswap</div>
+//             </Link>
+//           </div>
+//         </section>
 
-        <div className="mb-12">
-          <div className="text-3xl font-semibold">Get Started Playing</div>
-          <div>
-            <div></div>Dm the bullet telegram bot /connect{" "}
-            <a href="https://t.me/bullet_game_bot" target="_blank"></a>
-          </div>
-          <div>Follow the instructions</div>
-          <div>Congrats, you are ready to start playing!</div>
-          <div className="flex">
-            <Link
-              className="pink-700 rounded-md bg-[#0088CC] hover:bg-[#05a0ed] px-3 py-2 mt-2 flex flex-row gap-1 items-center justify-center font-bold"
-              href="https://t.me/bullet_game_bot"
-              target="_blank"
-            >
-              <Image
-                src="/logos/telegram.png"
-                height={25}
-                width={25}
-                alt=""
-                className="-translate-y-[0.5]"
-              />
-              Bullet Game Bot
-            </Link>
-          </div>
-        </div>
+//         <div className="mb-12">
+//           <div className="text-3xl font-semibold">Get Started Playing</div>
+//           <div>
+//             <div></div>Dm the bullet telegram bot /connect{" "}
+//             <a href="https://t.me/bullet_game_bot" target="_blank"></a>
+//           </div>
+//           <div>Follow the instructions</div>
+//           <div>Congrats, you are ready to start playing!</div>
+//           <div className="flex">
+//             <Link
+//               className="pink-700 rounded-md bg-[#0088CC] hover:bg-[#05a0ed] px-3 py-2 mt-2 flex flex-row gap-1 items-center justify-center font-bold"
+//               href="https://t.me/bullet_game_bot"
+//               target="_blank"
+//             >
+//               <Image
+//                 src="/logos/telegram.png"
+//                 height={25}
+//                 width={25}
+//                 alt=""
+//                 className="-translate-y-[0.5]"
+//               />
+//               Bullet Game Bot
+//             </Link>
+//           </div>
+//         </div>
 
-        <section className="mb-12">
-          <h2 className="text-3xl font-semibold">Commands</h2>
-          <ul>
-            <li className="flex flex-col gap-2">
-              <div>
-                <code>/connect</code> {`- Connect your wallet`}
-              </div>
-              <div>
-                <code>/roulette</code>{" "}
-                {`<barrel-size> <minimum-bet> - Starts a game with barrel size and minimum bet.`}
-              </div>
-              <div>
-                <code>/join</code> -{" "}
-                {`When someone starts a game, use this command to join`}
-              </div>
-            </li>
-            {/* List all commands with descriptions */}
-          </ul>
-        </section>
-      </div>
-      <motion.div>
-        <Image
-          src="/telegram.png"
-          height={300}
-          width={300}
-          alt=""
-          className="rounded-lg"
-        />
-      </motion.div>
-    </div>
-  );
-};
+//         <section className="mb-12">
+//           <h2 className="text-3xl font-semibold">Commands</h2>
+//           <ul>
+//             <li className="flex flex-col gap-2">
+//               <div>
+//                 <code>/connect</code> {`- Connect your wallet`}
+//               </div>
+//               <div>
+//                 <code>/roulette</code>{" "}
+//                 {`<barrel-size> <minimum-bet> - Starts a game with barrel size and minimum bet.`}
+//               </div>
+//               <div>
+//                 <code>/join</code> -{" "}
+//                 {`When someone starts a game, use this command to join`}
+//               </div>
+//             </li>
+//             {/* List all commands with descriptions */}
+//           </ul>
+//         </section>
+//       </div>
+//       <motion.div>
+//         <Image
+//           src="/telegram.png"
+//           height={300}
+//           width={300}
+//           alt=""
+//           className="rounded-lg"
+//         />
+//       </motion.div>
+//     </div>
+//   );
+// };
