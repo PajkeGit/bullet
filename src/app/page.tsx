@@ -53,7 +53,12 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="h-[100vh/2]"></div>
+      {
+        // ================================================================================================
+        // ROULETTE SECTION
+        // ================================================================================================
+      }
+
       <div
         id="russian-roulette"
         className="flex flex-col w-screen justify-center md:flex-row mx-auto items-center p-10 md:p-24 bg-[#100d0a] text-slate-200"
@@ -82,12 +87,58 @@ export default function Home() {
             </li>
             <li>The stake of the dying player is paid out to survivors.</li>
           </ul>
-          <button className="text-xl bg-red-800 hover:bg-red-700 rounded-lg px-5 py-2 mt-5">
-            Next Section
-          </button>
+          <ScrollButton id="" label="Telegram Section" />
         </div>
       </div>
-      <SectionTelegramTwist />
+
+      {
+        // ================================================================================================
+        // TELEGRAM SECTION
+        // ================================================================================================
+      }
+
+      <div
+        id="telegram-section"
+        className="flex flex-col min-w-screen justify-center md:flex-row mx-auto items-center gap-10 p-10 md:p-24 bg-[#100d0a] text-slate-200"
+      >
+        <div className="mr-[2.5rem]">
+          <h1 className="text-5xl font-bold mb-4">The Telegram Twist</h1>
+          <ul className="list-inside list-decimal max-w-[35vw]">
+            <li>
+              The Bullet Game Bot is a Telegram bot that organizes Russian
+              Roulette games between two or more players.
+            </li>
+            <li>After joining a game, players place bets using $BULLET.</li>
+            <li>
+              {`When the game starts, the bot transfers each player's stake into
+            escrow, and distributes the tokens appropriately at the end of the
+            game.`}
+            </li>
+            <li>
+              In order to play, each player must connect their wallet to the
+              bot, purchase the desired amount of $BULLET, and then join a
+              channel where the bot is hosting games.
+            </li>
+          </ul>
+          <ScrollButton id="" label="Next Section" />
+        </div>
+        <div className="flex justify-center ml-20">
+          <Image
+            src="/telegram.png" // Placeholder image
+            height={300}
+            width={300}
+            alt=""
+            className="rounded-lg"
+          />
+        </div>
+      </div>
+
+      {
+        // ================================================================================================
+        // BULLET SECTION
+        // ================================================================================================
+      }
+
       <SectionBullet />
       <div className="w-full flex flex-col items-center">
         <div>Only CA: 0x8ef32a03784c8fd63bbf027251b9620865bd54b6</div>
@@ -124,9 +175,30 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      {
+        // ================================================================================================
+        // TOKENOMICS SECTION
+        // ================================================================================================
+      }
+
       <SectionTokenomics />
       <SectionTaxBreakdown />
+
+      {
+        // ================================================================================================
+        // HOW TO CONNECT SECTION
+        // ================================================================================================
+      }
+
       <SectionHowToConnect />
+
+      {
+        // ================================================================================================
+        // HOW TO PLAY SECTION
+        // ================================================================================================
+      }
+
       <SectionHowToPlay />
       <Footer />
     </main>
