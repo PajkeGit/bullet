@@ -12,7 +12,7 @@ const SectionTelegramTwist: React.FC = () => {
     >
       <div className="mr-[2.5rem]">
         <h1 className="text-5xl font-bold mb-4">The Telegram Twist</h1>
-        <ul className="list-inside list-decimal max-w-[35vw]">
+        <ul className="list-inside list-decimal md:max-w-[35vw]">
           <li>
             The Bullet Game Bot is a Telegram bot that organizes Russian
             Roulette games between two or more players.
@@ -31,7 +31,7 @@ const SectionTelegramTwist: React.FC = () => {
         </ul>
         <ScrollButton id="bullet" label="About $BULLET" />
       </div>
-      <div className="flex justify-center ml-20">
+      <div className="flex justify-center md:ml-20">
         <Image
           src="/telegram.png" // Placeholder image
           height={300}

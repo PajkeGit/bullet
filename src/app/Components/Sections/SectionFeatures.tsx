@@ -10,7 +10,7 @@ const SectionFeatures = (props: Props) => {
   return (
     <div>
       <div
-        id="russian-roulette"
+        id="features"
         className="flex flex-col w-screen justify-center md:flex-col mx-auto items-center gap-20 text-center p-10 md:p-24 bg-[#100d0a] text-slate-200"
       >
         <div className="ml-10 flex items-center flex-col">
