@@ -87,7 +87,7 @@ export default function Home() {
           </button>
         </div>
       </div>
-      {/* <SectionTelegramTwist /> */}
+      <SectionTelegramTwist />
       <SectionBullet />
       <div className="w-full flex flex-col items-center">
         <div>Only CA: 0x8ef32a03784c8fd63bbf027251b9620865bd54b6</div>
