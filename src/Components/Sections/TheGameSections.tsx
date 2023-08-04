@@ -13,7 +13,7 @@ const SectionRussianRoulette: React.FC = () => {
   return (
     <div
       id="russian-roulette"
-      className="flex flex-col w-screen justify-center md:flex-row mx-auto items-center p-10 md:p-24 bg-[#100d0a] text-slate-200"
+      className="flex flex-col w-screen justify-center md:flex-row mx-auto items-center gap-10 p-10 md:p-24 bg-[#100d0a] text-slate-200"
     >
       <div className="flex justify-center mr-20">
         <Image
@@ -24,7 +24,7 @@ const SectionRussianRoulette: React.FC = () => {
           className="rounded-lg"
         />
       </div>
-      <div className="ml-10">
+      <div className="">
         <h1 className="text-5xl font-bold mb-4">Russian Roulette</h1>
         <h2 className="text-3xl font-semibold mb-4">But on Telegram</h2>
         <ul className="list-inside list-decimal">
