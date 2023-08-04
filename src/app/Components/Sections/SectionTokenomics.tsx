@@ -14,7 +14,7 @@ const SectionTokenomics: React.FC = () => {
   };
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10 p-10 md:p-24 bg-[#100d0a] text-slate-200 ">
+    <div className="grid grid-cols-1 md:grid-cols-2 items-center min-h-screen gap-10 p-10 md:p-24 bg-[#100d0a] text-slate-200 ">
       <div className="flex justify-center">
         <PieChart />
       </div>

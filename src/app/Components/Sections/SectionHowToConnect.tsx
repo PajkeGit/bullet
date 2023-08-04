@@ -7,12 +7,11 @@ const SectionHowToConnect: React.FC<Props> = () => {
     <section className="flex flex-col md:flex-row p-8 min-h-screen">
       <div className="w-full md:w-1/2 flex justify-center items-center">
         <div className="video-container">
-          {/* Placeholder for video - Replace with your video player component */}
-          <div
-            className="bg-gray-200 h-64 md:h-auto md:w-3/4"
-            style={{ paddingBottom: "56.25%" }}
-          >
-            Video goes here
+          <div className="video-wrapper w-full rounded-[30px] overflow-hidden">
+            <video controls className="video-player max-h-[75vh]">
+              <source src={"/connectvideo.mp4"} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
         </div>
       </div>
