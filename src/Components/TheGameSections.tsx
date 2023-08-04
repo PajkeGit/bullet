@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "next/link"; // Or whatever link component you're using
 import Image from "next/image"; // Or the appropriate image component
 import { motion } from "framer-motion"; // Or the appropriate import for motion components
 
@@ -13,7 +12,7 @@ const SectionRussianRoulette: React.FC = () => {
   return (
     <div
       id="russian-roulette"
-      className="flex flex-col md:flex-row mx-auto items-center gap-10 p-10 md:p-24 bg-[#100d0a] text-slate-200"
+      className="flex flex-col w-screen justify-center md:flex-row mx-auto items-center gap-10 p-10 md:p-24 bg-[#100d0a] text-slate-200"
     >
       <motion.div className="flex justify-center">
         <Image
@@ -60,7 +59,7 @@ const SectionTelegramTwist: React.FC = () => {
   return (
     <div
       id="telegram-twist"
-      className="grid grid-cols-1 md:grid-cols-2 items-center gap-10 p-10 md:p-24 bg-[#100d0a] text-slate-200"
+      className="flex flex-col md:flex-row mx-auto items-center gap-10 p-10 md:p-24 bg-[#100d0a] text-slate-200"
     >
       <div>
         <h1 className="text-5xl font-bold mb-8">The Telegram Twist</h1>
