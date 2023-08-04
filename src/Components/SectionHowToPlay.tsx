@@ -4,7 +4,7 @@ type Props = {};
 
 const SectionHowToPlay: React.FC<Props> = () => {
   return (
-    <section className="flex flex-col p-8 min-h-screen p-24">
+    <section className="flex flex-col min-h-screen p-24">
       <h2 className="text-2xl font-semibold mb-4">How to Play</h2>
       <div className="overflow-x-auto">
         <table className="min-w-full border border-gray-200 text-sm leading-snug">

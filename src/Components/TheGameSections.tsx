@@ -13,7 +13,7 @@ const SectionRussianRoulette: React.FC = () => {
   return (
     <div
       id="russian-roulette"
-      className="grid grid-cols-1 md:grid-cols-2 items-center gap-10 p-10 md:p-24 bg-[#100d0a] text-slate-200"
+      className="flex flex-col md:flex-row mx-auto items-center gap-10 p-10 md:p-24 bg-[#100d0a] text-slate-200"
     >
       <motion.div className="flex justify-center">
         <Image
