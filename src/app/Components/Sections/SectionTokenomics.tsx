@@ -22,7 +22,7 @@ const SectionTokenomics: React.FC = () => {
       <div className="flex justify-center h-[70%] items-center">
         <PieChart />
       </div>
-      <div>
+      <div className="w-full flex flex-col items-center">
         <h1 className="text-5xl font-bold mb-8">Tokenomics</h1>
         <div>Stealth Launch</div>
         <p>90% - Initial Liquidity Pool</p>
