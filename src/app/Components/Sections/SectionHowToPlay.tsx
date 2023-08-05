@@ -11,7 +11,7 @@ const SectionHowToPlay: React.FC<Props> = () => {
     >
       <h2 className="text-5xl font-semibold mb-8">How to Play</h2>
       <div className="overflow-x-auto">
-        <table className="min-w-full border border-gray-200 text-sm leading-snug mb-4">
+        <table className="min-w-full border border-gray-200 text-sm leading-snug mb-4 s">
           <thead>
             <tr className="bg-gray-800 text-white">
               <th className="py-2 px-4 text-left">Command</th>

@@ -11,11 +11,14 @@ const SectionHowToConnect: React.FC<Props> = () => {
     >
       <div className="w-full md:w-1/2 flex justify-center items-center">
         <div className="video-container">
-          <div className="video-wrapper w-full rounded-[30px] overflow-hidden">
+          <div className="video-wrapper w-full rounded-[30px] overflow-hidden flex flex-col items-center">
             <video controls className="video-player max-h-[75vh]">
               <source src={"/connectvideo.mp4"} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
+            <div className="flex md:hidden">
+              <ScrollButton id="how-to-play" label="How to play" />
+            </div>
           </div>
         </div>
       </div>
@@ -39,7 +42,9 @@ const SectionHowToConnect: React.FC<Props> = () => {
           </li>
           <li>You are now connected and can use your $BULLET to bet!</li>
         </ol>
-        <ScrollButton id="how-to-play" label="How to play" />
+        <div className="hidden md:flex">
+          <ScrollButton id="how-to-play" label="How to play" />
+        </div>
       </div>
     </section>
   );
