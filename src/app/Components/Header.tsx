@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import "./ScrollButton.css";
 
 type Props = {};
 
@@ -57,7 +58,7 @@ const Header = (props: Props) => {
         </div>
       </div>
       <button
-        className="bg-red-800 py-1 px-2 rounded-md hover:bg-red-700"
+        className="scroll-button"
         onClick={() => {
           handleClick("russian-roulette");
         }}
