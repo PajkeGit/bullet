@@ -7,7 +7,7 @@ const SectionHowToConnect: React.FC<Props> = () => {
   return (
     <section
       id="how-to-connect"
-      className="flex flex-col md:flex-row p-8 min-h-screen"
+      className="flex flex-col-reverse md:flex-row p-8 min-h-screen"
     >
       <div className="w-full md:w-1/2 flex justify-center items-center">
         <div className="video-container">
