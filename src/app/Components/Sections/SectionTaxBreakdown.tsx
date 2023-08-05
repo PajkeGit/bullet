@@ -13,7 +13,7 @@ const SectionTaxBreakdown = (props: Props) => {
       <div className="flex flex-col gap-2">
         <div className="text-4xl">Taxes Breakdown</div>
         <div className="flex flex-row gap-2 justify-between px-5 border py-3">
-          <div className="">
+          <div className="flex flex-col gap-1 justify-center items-center">
             <div>5% Buy</div>
             <div>5% Sell</div>
           </div>
