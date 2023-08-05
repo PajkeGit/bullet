@@ -22,7 +22,7 @@ const SectionBullet: React.FC = () => {
         </p>
         <ScrollButton id="tokenomics" label="Tokenomics" />
       </div>
-      <div className="flex justify-center w-[300px] md:w-[500px]">
+      <div className="flex justify-center w-[300px] md:w-[400px]">
         <Image
           src="/roulettespin.gif" // Replace with your image path
           height={300}
