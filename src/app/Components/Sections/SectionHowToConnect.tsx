@@ -46,7 +46,7 @@ const SectionHowToConnect: React.FC<Props> = () => {
         <div className="hidden md:flex">
           <ScrollButton id="how-to-play" label="How to play" />
         </div>
-        <StartPlayingPopupWrap />
+        {/* <StartPlayingPopupWrap /> */}
       </div>
     </section>
   );
