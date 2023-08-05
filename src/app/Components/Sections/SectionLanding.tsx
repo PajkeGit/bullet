@@ -25,7 +25,7 @@ const SectionLanding = (props: Props) => {
           <ChatArea />
         </div>
         <div className="my-0 flex items-center flex-col">
-          <div className="flex flex-row gap-1 py-2">
+          <div className="flex flex-row gap-1 py-2 z-50">
             <a
               href="https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0x8ef32a03784c8fd63bbf027251b9620865bd54b6"
               target="_blank"
@@ -41,7 +41,7 @@ const SectionLanding = (props: Props) => {
                 width={22}
                 height={22}
                 alt=""
-                className="translate-y-[3px]"
+                className="translate-y-[3px] brightness-125 saturate-150"
               />
             </a>
           </div>

@@ -8,7 +8,7 @@ const SectionBullet: React.FC = () => {
       id="bullet"
       className="flex flex-col lg:flex-row items-center mx-auto gap-10 p-10 md:p-24 bg-[#100d0a] text-slate-200"
     >
-      <div className="w-[300px] md:w-[600px]">
+      <div className="list-inside list-decimal lg:max-w-[35vw]">
         <h1 className="text-5xl font-bold mb-8">$BULLET</h1>
         <p>
           $BULLET is a deflationary ERC20 token required to place bets within

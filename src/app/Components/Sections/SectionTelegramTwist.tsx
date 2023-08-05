@@ -1,6 +1,9 @@
+"use client";
+
 import React from "react";
 import ScrollButton from "../ScrollButton";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 type Props = {};
 
@@ -31,7 +34,13 @@ const SectionTelegramTwist: React.FC = () => {
         </ul>
         <ScrollButton id="bullet" label="About $BULLET" />
       </div>
-      <div className="flex justify-center md:ml-20 w-[320px] md:w-[500px]">
+      <motion.div
+        initial={{ opacity: 0, y: "20%", x: "20%" }}
+        whileInView={{ opacity: 1, y: "0%", x: "0%" }}
+        viewport={{ once: true }}
+        transition={{ delay: 0.2, duration: 0.4, ease: "easeIn" }}
+        className="flex justify-center md:ml-20 w-[320px] md:w-[500px]"
+      >
         <Image
           src="/game.png" // Placeholder image
           height={300}
@@ -40,7 +49,7 @@ const SectionTelegramTwist: React.FC = () => {
           alt=""
           className="rounded-lg"
         />
-      </div>
+      </motion.div>
     </div>
   );
 };

@@ -1,6 +1,10 @@
+"use client";
+
 import Image from "next/image";
 import React from "react";
 import ScrollButton from "../ScrollButton";
+import "./SomeCss.css";
+import { motion } from "framer-motion";
 
 type Props = {};
 
@@ -10,7 +14,13 @@ const SectionRussianRoulette: React.FC = () => {
       id="russian-roulette"
       className="flex flex-col w-screen justify-center md:flex-row mx-auto items-center gap-10 p-10 md:p-24 bg-[#100d0a] text-slate-200"
     >
-      <div className="flex justify-center w-full lg:w-[30vw] md:mr-20">
+      <motion.div
+        initial={{ opacity: 0, y: "20%", x: "-20%" }}
+        whileInView={{ opacity: 1, y: "0%", x: "0%" }}
+        viewport={{ once: true }}
+        transition={{ delay: 0.2, duration: 0.4, ease: "easeIn" }}
+        className="flex justify-center w-full lg:w-[30vw] md:mr-20 gradient-overlay"
+      >
         <Image
           src="/redgun.png" // Placeholder image
           layout="responsive"
@@ -19,7 +29,7 @@ const SectionRussianRoulette: React.FC = () => {
           alt=""
           className="rounded-lg"
         />
-      </div>
+      </motion.div>
       <div className="">
         <h1 className="text-5xl font-bold mb-4">Russian Roulette</h1>
         <h2 className="text-3xl font-semibold mb-4">But on Telegram</h2>
