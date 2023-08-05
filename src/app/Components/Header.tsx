@@ -56,6 +56,10 @@ const Header = (props: Props) => {
             Features
           </button>
         </div>
+        <div className="border rounded-md px-2 text-slate-200 border-slate-200 flex flex-row items-center gap-1 text-sm ml-5">
+          <div>Betting bot live now</div>
+          <div className="rounded-full w-[0.35rem] h-[0.35rem] bg-green-500 animate-pulse"></div>
+        </div>
       </div>
       <button
         className="scroll-button"

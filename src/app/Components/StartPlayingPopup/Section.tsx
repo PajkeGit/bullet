@@ -11,6 +11,7 @@ const Section: React.FC<SectionProps> = ({ children }) => {
       animate={{ x: 0, opacity: 1 }}
       exit={{ opacity: "0" }}
       transition={{ ease: "easeInOut" }}
+      className="flex flex-col items-center justify-center"
     >
       {children}
     </motion.div>
