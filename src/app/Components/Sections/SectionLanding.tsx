@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import ScrollButton from "../ScrollButton";
 import ChatArea from "../ChatArea";
+import "./SomeCss.css";
 
 type Props = {};
 
@@ -14,11 +15,11 @@ const SectionLanding = (props: Props) => {
       </div>
       <div className="z-50 w-full min-h-screen flex flex-col items-center py-5 justify-between">
         <div></div>
-        {/* <Header /> */}
+
         <div className="flex flex-col md:flex-row mt-10 md:mt-0 gap-[2rem] md:gap-[10rem] items-center z-50">
           <div className="text-6xl md:text-8xl flex flex-col items-start ">
             <div className="font-bold">FACE THE</div>
-            <div className="text-red-500 -translate-x-[5px] font-bold">
+            <div className="text-red-500 -translate-x-[5px] font-bold text-shine">
               ODDS
             </div>
 

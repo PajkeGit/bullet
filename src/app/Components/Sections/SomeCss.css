@@ -21,3 +21,10 @@
 .rounded-lg {
   border-radius: 20px;
 }
+
+.text-shine {
+  background: linear-gradient(90deg, #cc3333, #771818, #cc3333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% auto;
+}
