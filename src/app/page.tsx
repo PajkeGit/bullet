@@ -17,6 +17,8 @@ import SectionRussianRoulette from "./Components/Sections/SectionRussianRoulette
 import SectionTelegramTwist from "./Components/Sections/SectionTelegramTwist";
 import SectionContractAddress from "./Components/Sections/SectionContractAddress";
 import SectionLanding from "./Components/Sections/SectionLanding";
+import StartPlayingPopup from "./Components/StartPlayingPopup/StartPlayingPopup";
+import StartPlayingPopupWrap from "./Components/StartPlayingPopup/StartPlayingPopupWrap";
 
 export default function Home() {
   const data = {

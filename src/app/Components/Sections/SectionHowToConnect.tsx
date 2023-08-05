@@ -1,5 +1,6 @@
 import React from "react";
 import ScrollButton from "../ScrollButton";
+import StartPlayingPopupWrap from "../StartPlayingPopup/StartPlayingPopupWrap";
 
 type Props = {};
 
@@ -45,6 +46,7 @@ const SectionHowToConnect: React.FC<Props> = () => {
         <div className="hidden md:flex">
           <ScrollButton id="how-to-play" label="How to play" />
         </div>
+        <StartPlayingPopupWrap />
       </div>
     </section>
   );

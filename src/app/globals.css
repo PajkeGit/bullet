@@ -25,3 +25,27 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.red-button {
+  text-align: center;
+  background-size: 200% auto;
+  color: #fff;
+  border-radius: 25px;
+  transition: all 0.4s;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #991b1b; /* Updated border color */
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  margin-top: 10px; /* Added margin-top */
+  background-image: linear-gradient(
+    90deg,
+    rgba(153, 27, 27, 0.5) 25%,
+    /* Updated main color with 50% opacity */ rgba(109, 7, 7, 0.5) 50%,
+    rgba(153, 27, 27, 0.5) 75% /* Updated main color with 50% opacity */
+  );
+}
+
+.red-button:hover {
+  background-position: right center; /* change the direction of the change here */
+}
