@@ -6,7 +6,7 @@ const SectionBullet: React.FC = () => {
   return (
     <div
       id="bullet"
-      className="flex flex-col md:flex-row items-center mx-auto gap-10 p-10 md:p-24 bg-[#100d0a] text-slate-200"
+      className="flex flex-col lg:flex-row items-center mx-auto gap-10 p-10 md:p-24 bg-[#100d0a] text-slate-200"
     >
       <div className="w-[300px] md:w-[600px]">
         <h1 className="text-5xl font-bold mb-8">$BULLET</h1>
@@ -24,7 +24,7 @@ const SectionBullet: React.FC = () => {
       </div>
       <div className="flex justify-center w-[300px] md:w-[500px]">
         <Image
-          src="/bulletbuy.png" // Replace with your image path
+          src="/roulettespin.gif" // Replace with your image path
           height={300}
           width={300}
           layout="responsive"

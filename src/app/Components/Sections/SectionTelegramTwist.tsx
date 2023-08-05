@@ -8,11 +8,11 @@ const SectionTelegramTwist: React.FC = () => {
   return (
     <div
       id="telegram-twist"
-      className="flex flex-col min-w-screen justify-center md:flex-row mx-auto items-center gap-10 p-10 md:p-24 bg-[#100d0a] text-slate-200"
+      className="flex flex-col min-w-screen justify-center lg:flex-row mx-auto items-center gap-10 p-10 md:p-24 bg-[#100d0a] text-slate-200"
     >
       <div className="mr-[2.5rem]">
         <h1 className="text-5xl font-bold mb-4">The Telegram Twist</h1>
-        <ul className="list-inside list-decimal md:max-w-[35vw]">
+        <ul className="list-inside list-decimal lg:max-w-[35vw]">
           <li>
             The Bullet Game Bot is a Telegram bot that organizes Russian
             Roulette games between two or more players.
@@ -31,11 +31,12 @@ const SectionTelegramTwist: React.FC = () => {
         </ul>
         <ScrollButton id="bullet" label="About $BULLET" />
       </div>
-      <div className="flex justify-center md:ml-20">
+      <div className="flex justify-center md:ml-20 w-[320px] md:w-[500px]">
         <Image
-          src="/telegram.png" // Placeholder image
+          src="/game.png" // Placeholder image
           height={300}
           width={300}
+          layout="responsive"
           alt=""
           className="rounded-lg"
         />

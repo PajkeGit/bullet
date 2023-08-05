@@ -65,7 +65,7 @@ const SectionLinks = (props: Props) => {
             target="_blank"
           >
             <Image
-              src="/logos/uniswapw.png"
+              src="/logos/uniswap.png"
               height={25}
               width={25}
               alt=""

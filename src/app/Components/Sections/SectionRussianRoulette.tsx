@@ -10,11 +10,12 @@ const SectionRussianRoulette: React.FC = () => {
       id="russian-roulette"
       className="flex flex-col w-screen justify-center md:flex-row mx-auto items-center gap-10 p-10 md:p-24 bg-[#100d0a] text-slate-200"
     >
-      <div className="flex justify-center md:mr-20">
+      <div className="flex justify-center w-full lg:w-[30vw] md:mr-20">
         <Image
-          src="/telegram.png" // Placeholder image
-          height={300}
+          src="/redgun.png" // Placeholder image
+          layout="responsive"
           width={300}
+          height={300}
           alt=""
           className="rounded-lg"
         />
@@ -34,7 +35,7 @@ const SectionRussianRoulette: React.FC = () => {
           </li>
           <li>The stake of the dying player is paid out to survivors.</li>
         </ul>
-        <ScrollButton id="telegram-twist" label="Next Section" />
+        <ScrollButton id="telegram-twist" label="The Twist..." />
       </div>
     </div>
   );
