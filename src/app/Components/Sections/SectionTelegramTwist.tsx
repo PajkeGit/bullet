@@ -39,7 +39,7 @@ const SectionTelegramTwist: React.FC = () => {
         whileInView={{ opacity: 1, y: "0%", x: "0%" }}
         viewport={{ once: true }}
         transition={{ delay: 0.2, duration: 0.4, ease: "easeIn" }}
-        className="flex justify-center md:ml-20 w-[320px] md:w-[500px]"
+        className="flex justify-center md:ml-20 w-[320px] md:w-[450px]"
       >
         <Image
           src="/game.png" // Placeholder image

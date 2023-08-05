@@ -16,9 +16,11 @@ const SectionLanding = (props: Props) => {
         <div></div>
         {/* <Header /> */}
         <div className="flex flex-col md:flex-row mt-10 md:mt-0 gap-[2rem] md:gap-[10rem] items-center z-50">
-          <div className="text-6xl md:text-8xl flex flex-col items-start font-bold">
-            <div className="">FACE THE</div>
-            <div className="text-red-500 -translate-x-[5px]">ODDS</div>
+          <div className="text-6xl md:text-8xl flex flex-col items-start ">
+            <div className="font-bold">FACE THE</div>
+            <div className="text-red-500 -translate-x-[5px] font-bold">
+              ODDS
+            </div>
 
             <ScrollButton id="russian-roulette" label="Get Started" />
           </div>
