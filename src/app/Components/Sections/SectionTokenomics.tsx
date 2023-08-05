@@ -27,7 +27,7 @@ const SectionTokenomics: React.FC = () => {
         <div>Stealth Launch</div>
         <p>90% - Initial Liquidity Pool</p>
         <p>10% - Marketing Wallet</p>
-        <ScrollButton id="tax-breakdown" label="Continue" />
+        <ScrollButton id="tax-breakdown" label="Start Playing" />
       </div>
     </div>
   );
