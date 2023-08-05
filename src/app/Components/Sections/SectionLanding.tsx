@@ -25,6 +25,26 @@ const SectionLanding = (props: Props) => {
           <ChatArea />
         </div>
         <div className="my-0 flex items-center flex-col">
+          <div className="flex flex-row gap-1 py-2">
+            <a
+              href="https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0x8ef32a03784c8fd63bbf027251b9620865bd54b6"
+              target="_blank"
+            >
+              <Image src="/logos/uniswap.png" width={24} height={24} alt="" />
+            </a>
+            <a
+              href="https://www.dextools.io/app/en/ether/pair-explorer/0x0d0a1767da735f725f41c4315e072c63dbc6ab3d"
+              target="_blank"
+            >
+              <Image
+                src="/logos/dextools.png"
+                width={22}
+                height={22}
+                alt=""
+                className="translate-y-[3px]"
+              />
+            </a>
+          </div>
           <div className="z-50 text-slate-300 text-sm">
             0x8ef32a03784c8fd63bbf027251b9620865bd54b6
           </div>
